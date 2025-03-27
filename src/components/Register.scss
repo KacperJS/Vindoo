@@ -1,0 +1,69 @@
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.register-form {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.form-input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(135, 61, 62, 255); /* kolor linii */
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+  color: #333;
+}
+
+button {
+  width: 80%;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  background-color: rgba(135, 61, 62, 255); /* kolor przycisku */
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: darken(rgba(135, 61, 62, 255), 10%);
+}
+
+.right-panel {
+  flex: 1;
+  background: linear-gradient(to bottom, rgba(35, 15, 15, 255) 0%, rgba(135, 61, 62, 255) 100%);
+  min-height: 100vh;
+}
+
+img {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 20px;
+  margin-right: 40px; /* Ajustment for logo */
+}
+
+.signup-text, .login-text {
+  text-align: center;
+  margin-top: 10px;
+
+  a {
+    color: #5C67F2;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

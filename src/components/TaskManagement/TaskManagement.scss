@@ -1,0 +1,127 @@
+.task-management {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Rozciągaj elementy na całą szerokość */
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dwie równe kolumny */
+    gap: 20px; /* Odstępy między polami */
+    width: 100%;
+    align-items: stretch; /* Upewnij się, że wszystkie elementy są rozciągnięte */
+  }
+
+  input,
+  select {
+    width: 100%; /* Inputy mają 100% szerokości w swojej kolumnie */
+    padding: 12px;
+    border: 2px solid rgba(135, 61, 62, 255);
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  button {
+    grid-column: 1 / -1; /* Przyciski na całą szerokość formularza */
+    padding: 12px;
+    background-color: rgba(135, 61, 62, 255);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Przyciski rozciągnięte na całą szerokość */
+    align-self: stretch; /* Upewnij się, że przyciski również są rozciągnięte */
+
+    &:hover {
+      background-color: rgba(115, 41, 42, 255);
+    }
+  }
+}
+
+.project-list {
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-item {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.project-item-title {
+  font-size: 20px;
+  color: #333;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+
+.project-item-details {
+  display: none;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.project-item-details.active {
+  display: block;
+}
+
+.task-item {
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: #d93636;
+}
