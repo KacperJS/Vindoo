@@ -60,3 +60,4 @@ Mechanizm wyszukiwania filtruje dane pobrane z bazy w czasie rzeczywistym, dzię
 
 ## Projekt jest dostępny w wersji live na Vercel:
 
+https://vindoo.vercel.app/
